@@ -9,8 +9,8 @@ class Blog_ATS(unittest.TestCase):
         self.driver = webdriver.Chrome()
 
     def test_blog(self):
-        user = "pkandel1"
-        pwd = "Hommie2890190"
+        user = "instructor"
+        pwd = "instructor1a"
         driver = self.driver
         driver.maximize_window()
         driver.get("http://pkandel.pythonanywhere.com/admin")

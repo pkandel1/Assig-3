@@ -9,8 +9,8 @@ class Blog_ATS(unittest.TestCase):
         self.driver = webdriver.Chrome()
 
     def test_blog(self):
-        user = "pkandel1"
-        pwd = "Hommie2890190"
+        user = "instructor"
+        pwd = "instructor1a"
         driver = self.driver
         driver.maximize_window()
         driver.get("http://pkandel1.pythonanywhere.com/admin")
@@ -21,16 +21,16 @@ class Blog_ATS(unittest.TestCase):
         elem.send_keys(Keys.RETURN)
         driver.get("http://pkandel1.pythonanywhere.com/")
         assert "Logged In"
-        time.sleep(5)
+        time.sleep(3)
         elem = driver.find_element_by_xpath("/html/body/div[1]/a/span").click()
-        time.sleep(5)
+        time.sleep(3)
         elem = driver.find_element_by_id("id_title")
         elem.send_keys("This is a test post with selenium")
         elem = driver.find_element_by_id("id_text")
         elem.send_keys("This is a test post of text with selenium")
-        time.sleep(5)
+        time.sleep(3)
         elem = driver.find_element_by_xpath("/html/body/div[2]/div/div/form/button").click()
-        time.sleep(5)
+        time.sleep(3)
         assert "Posted Blog Entry"
         driver.get("http://pkandel1.pythonanywhere.com/")
         time.sleep(1)

@@ -12,8 +12,8 @@ class Customer_ATS(unittest.TestCase):
 
   def test_blog(self):
       my_list = read_mpg()
-      user = "pkandel1"
-      pwd = "Hommie2890190"
+      user = "instructor"
+      pwd = "instructor1a"
       driver = self.driver
       driver.maximize_window()
       driver.get("http://pkandel.pythonanywhere.com/admin")
@@ -25,10 +25,10 @@ class Customer_ATS(unittest.TestCase):
       driver.get("http://pkandel.pythonanywhere.com/admin")
       assert "Logged In"
       time.sleep(5)
-
+      elem = driver.find_element_by_xpath("/html/body/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/th/a").click()
       for i in range(0, len(my_list)):
        my_list = read_mpg()
-       elem = driver.find_element_by_xpath("/html/body/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[1]/a").click()
+       elem = driver.find_element_by_xpath("/html/body/div/div[3]/div/ul/li/a").click()
        time.sleep(5)
        Cust_name = my_list[i][0]
        Organization = my_list[i][1]
