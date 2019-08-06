@@ -27,6 +27,8 @@ class Customer_ATS(unittest.TestCase):
       time.sleep(5)
       elem = driver.find_element_by_xpath("/html/body/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/th/a").click()
       for i in range(0, len(my_list)):
+
+
        my_list = read_mpg()
        elem = driver.find_element_by_xpath("/html/body/div/div[3]/div/ul/li/a").click()
        time.sleep(5)
@@ -77,7 +79,7 @@ class Customer_ATS(unittest.TestCase):
 
        elem = driver.find_element_by_xpath("/html/body/div[1]/div[3]/div/form/div/div/input[1]").click()
        time.sleep(4)
-       driver.get("http://pkandel.pythonanywhere.com/")
+       
 
 
 def read_mpg():
