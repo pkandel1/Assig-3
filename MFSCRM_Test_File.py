@@ -7,7 +7,7 @@ Delete_Customer = __import__("MFSCRM_Delete_customer")
 Add_product = __import__("MFSCRM_Add_product")
 Edit_Product = __import__("MFSCRM_Edit_Product")
 Delete_Product = __import__("MFSCRM_Delete_Product")
-Add_Service = __import__("MFSCRM_Delete_Service")
+Add_Service = __import__("MFSCRM_Add_Service")
 Edit_Service = __import__("MFSCRM_Edit_Service")
 Delete_Service = __import__("MFSCRM_Delete_Service")
 
