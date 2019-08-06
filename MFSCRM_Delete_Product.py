@@ -12,7 +12,7 @@ class Blog_ATS(unittest.TestCase):
         user = "instructor"
         pwd = "instructor1a"
         driver = self.driver
-        #driver.maximize_window()
+
         driver.get("http://pkandel.pythonanywhere.com/home/")
         elem = driver.find_element_by_xpath("//*[@id=\"myNavbar\"]/ul[2]/li/a").click()
 

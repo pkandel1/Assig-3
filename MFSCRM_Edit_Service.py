@@ -12,7 +12,6 @@ class Blog_ATS(unittest.TestCase):
         user = "instructor"
         pwd = "instructor1a"
         driver = self.driver
-        #driver.maximize_window()
         driver.get("http://pkandel.pythonanywhere.com//home/")
         elem = driver.find_element_by_xpath("//*[@id=\"myNavbar\"]/ul[2]/li/a").click()
 
@@ -21,7 +20,6 @@ class Blog_ATS(unittest.TestCase):
         elem = driver.find_element_by_id("id_password")
         elem.send_keys(pwd)
         elem.send_keys(Keys.RETURN)
-        #driver.get("http://mavsystems.pythonanywhere.com/admin/")
         assert "Logged In"
         time.sleep(2)
         elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/div[2]/div/div/div/div/div[2]/div/div/p[2]/a").click()
