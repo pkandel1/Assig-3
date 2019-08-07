@@ -10,7 +10,7 @@ class Blog_ATS(unittest.TestCase):
 
    def test_blog(self):
        user = "3900team1"
-       pwd = "3900team1"
+       pwd = "instructor1a"
        driver = self.driver
        driver.maximize_window()
        driver.get("http://3900team1.pythonanywhere.com//admin")
